@@ -12,6 +12,7 @@ using System.Windows.Forms;
  * 300931589
  * Aug 8th, 2017
  * Interface for BMI Calculator
+ * Github link: https://github.com/pflisch/COMP123---BMI-Calculator
  */
 
 namespace WindowsFormsApplication3
