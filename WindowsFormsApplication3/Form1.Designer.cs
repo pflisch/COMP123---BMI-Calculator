@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.textBox5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
@@ -64,25 +66,70 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 113F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(291, 426);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // radioButton2
+            // button1
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(153, 82);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(106, 35);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Metric";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.button1.AccessibleDescription = "";
+            this.button1.AccessibleName = "";
+            this.button1.Location = new System.Drawing.Point(8, 299);
+            this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 27);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Calculate BMI";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(8, 412);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(129, 38);
+            this.textBox3.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 209);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 62);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "My Weight";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(153, 216);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(130, 38);
+            this.textBox2.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 134);
+            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 62);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "My Height";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(153, 141);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(130, 38);
+            this.textBox1.TabIndex = 3;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(8, 82);
+            this.radioButton1.Location = new System.Drawing.Point(8, 73);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(128, 35);
@@ -91,61 +138,17 @@
             this.radioButton1.Text = "Imperial";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // radioButton2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 154);
-            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 62);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "My Height";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 229);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 62);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "My Weight";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(153, 161);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 38);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(153, 236);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(130, 38);
-            this.textBox2.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(153, 319);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 38);
-            this.textBox3.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.AccessibleDescription = "";
-            this.button1.AccessibleName = "";
-            this.button1.Location = new System.Drawing.Point(8, 319);
-            this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 27);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Calculate BMI";
-            this.button1.UseVisualStyleBackColor = true;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(153, 73);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(106, 35);
+            this.radioButton2.TabIndex = 7;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Metric";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -154,11 +157,19 @@
             this.textBox4.Size = new System.Drawing.Size(139, 38);
             this.textBox4.TabIndex = 8;
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(153, 299);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(130, 38);
+            this.textBox5.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 442);
+            this.ClientSize = new System.Drawing.Size(313, 515);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -186,6 +197,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
 
