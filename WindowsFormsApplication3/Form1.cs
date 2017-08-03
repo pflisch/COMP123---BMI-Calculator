@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* Priscylla Flisch 
+ * 300931589
+ * Aug 8th, 2017
+ * Interface for BMI Calculator
+ */
+
 namespace WindowsFormsApplication3
 {
     public partial class Form1 : Form
