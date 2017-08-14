@@ -15,11 +15,11 @@ using System.Windows.Forms;
  * Github link: https://github.com/pflisch/COMP123---BMI-Calculator
  */
 
-namespace WindowsFormsApplication3
+namespace Assignment5
 {
-    public partial class Form1 : Form
+    public partial class BMICalculator : Form
     {
-        public Form1()
+        public BMICalculator()
         {
             InitializeComponent();
         }
@@ -35,6 +35,31 @@ namespace WindowsFormsApplication3
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImperialButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MyWeightLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MetricButton_CheckedChanged(object sender, EventArgs e)
         {
 
         }
