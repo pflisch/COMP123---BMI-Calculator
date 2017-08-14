@@ -86,7 +86,7 @@
             this.btnCalculate.TabIndex = 6;
             this.btnCalculate.Text = "Calculate BMI";
             this.btnCalculate.UseVisualStyleBackColor = false;
-            this.btnCalculate.Click += new System.EventHandler(this.button1_Click);
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // txtWeight
             // 
@@ -96,7 +96,7 @@
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(113, 40);
             this.txtWeight.TabIndex = 4;
-            this.txtWeight.TextChanged += new System.EventHandler(this.MyWeight_TextBox_TextChanged);
+            this.txtWeight.TextChanged += new System.EventHandler(this.txtWeight_TextChanged);
             // 
             // txtHeigh
             // 
@@ -106,7 +106,7 @@
             this.txtHeigh.Name = "txtHeigh";
             this.txtHeigh.Size = new System.Drawing.Size(113, 40);
             this.txtHeigh.TabIndex = 3;
-            this.txtHeigh.TextChanged += new System.EventHandler(this.MyHeight_TextBox_TextChanged);
+            this.txtHeigh.TextChanged += new System.EventHandler(this.txtHeigh_TextChanged);
             // 
             // btnImperial
             // 
@@ -123,7 +123,7 @@
             this.btnImperial.TabStop = true;
             this.btnImperial.Text = "Imperial";
             this.btnImperial.UseVisualStyleBackColor = false;
-            this.btnImperial.CheckedChanged += new System.EventHandler(this.ImperialButton_CheckedChanged);
+            this.btnImperial.CheckedChanged += new System.EventHandler(this.btnImperial_CheckedChanged);
             // 
             // btnMetric
             // 
@@ -139,7 +139,7 @@
             this.btnMetric.TabStop = true;
             this.btnMetric.Text = "Metric";
             this.btnMetric.UseVisualStyleBackColor = true;
-            this.btnMetric.CheckedChanged += new System.EventHandler(this.MetricButton_CheckedChanged);
+            this.btnMetric.CheckedChanged += new System.EventHandler(this.btnMetric_CheckedChanged);
             // 
             // lblHeight
             // 
@@ -153,7 +153,7 @@
             this.lblHeight.TabIndex = 2;
             this.lblHeight.Text = "My Height";
             this.lblHeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblHeight.Click += new System.EventHandler(this.label2_Click);
+            this.lblHeight.Click += new System.EventHandler(this.lblHeight_Click);
             // 
             // txtCalculate
             // 
@@ -163,7 +163,7 @@
             this.txtCalculate.Name = "txtCalculate";
             this.txtCalculate.Size = new System.Drawing.Size(113, 40);
             this.txtCalculate.TabIndex = 9;
-            this.txtCalculate.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.txtCalculate.TextChanged += new System.EventHandler(this.txtCalculate_TextChanged);
             // 
             // btnClose
             // 
@@ -175,7 +175,7 @@
             this.btnClose.TabIndex = 11;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.button2_Click);
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblWeight
             // 
@@ -189,7 +189,7 @@
             this.lblWeight.TabIndex = 1;
             this.lblWeight.Text = "My Weight";
             this.lblWeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblWeight.Click += new System.EventHandler(this.MyWeightLabel_Click);
+            this.lblWeight.Click += new System.EventHandler(this.lblWeight_Click);
             // 
             // btnReset
             // 

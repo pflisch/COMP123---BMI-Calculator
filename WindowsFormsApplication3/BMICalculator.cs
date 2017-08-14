@@ -76,163 +76,54 @@ namespace Assignment5
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if ((string.IsNullOrEmpty(HeightTextBox.Text)) || (string.IsNullOrEmpty(WeightTextBox.Text)) || (ImperialRadioButton.Checked == false && MetricRadioButton.Checked == false))
-                {
-                    throw new Exception("Please enter the values!");
-                }
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show(exception.Message);
-                return;
-            }
-            Height = double.Parse(HeightTextBox.Text);
-            Weight = double.Parse(WeightTextBox.Text);
-            if (ImperialRadioButton.Checked)
-            {
-                BMIValue = (Weight * 703) / (Height * Height);
-                BMIResultTextBox.Text = string.Format("{0:f2}", BMIValue);
-                SetBMIScale(BMIValue);
-            }
-            else if (MetricRadioButton.Checked)
-            {
-                BMIValue = Weight / (Height * Height);
-                BMIResultTextBox.Text = string.Format("{0:f2}", BMIValue);
-                SetBMIScale(BMIValue);
-            }
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                if ((string.IsNullOrEmpty(HeightTextBox.Text)) || (string.IsNullOrEmpty(WeightTextBox.Text)) || (ImperialRadioButton.Checked == false && MetricRadioButton.Checked == false))
-                {
-                    throw new Exception("Please enter the values!");
-                }
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show(exception.Message);
-                return;
-            }
-            Height = double.Parse(HeightTextBox.Text);
-            Weight = double.Parse(WeightTextBox.Text);
-            if (ImperialRadioButton.Checked)
-            {
-                BMIValue = (Weight * 703) / (Height * Height);
-                BMIResultTextBox.Text = string.Format("{0:f2}", BMIValue);
-                SetBMIScale(BMIValue);
-            }
-            else if (MetricRadioButton.Checked)
-            {
-                BMIValue = Weight / (Height * Height);
-                BMIResultTextBox.Text = string.Format("{0:f2}", BMIValue);
-                SetBMIScale(BMIValue);
-            }
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+            private void btnReset_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void ImperialButton_CheckedChanged(object sender, EventArgs e)
+        private void btnImperial_CheckedChanged(object sender, EventArgs e)
         {
             HeightLabel.Text = "My Height(Inches) :";
             WeightLabel.Text = "My Weight(Pounds) :";
         }
 
-        private void MyWeightLabel_Click(object sender, EventArgs e)
-        {
-            
-            }
-
-        private void MetricButton_CheckedChanged(object sender, EventArgs e)
+        private void btnMetric_CheckedChanged(object sender, EventArgs e)
         {
             HeightLabel.Text = "My Height(Meters) :";
             WeightLabel.Text = "My Weight(Kg) :";
         }
 
-        private void MyHeight_TextBox_TextChanged(object sender, EventArgs e)
-        {
-            double temp = 0.0f;
-            try
-            {
-                if ("".Equals(MyHeight_TextBox_TextChanged))
-                {
-                    temp = 99.0f;
-                }
-                else
-                {
-                    temp = double.Parse(MyHeight_TextBox_TextChanged);
-                }
-            }
-            catch (Exception exception)
-            {
-                temp = -1.0f;
-            }
-
-            try
-            {
-                if (temp < 0)
-                {
-                    throw new Exception("Input string was not in correct format!");
-                }
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(MessageBox.Show(exception.Message));
-                MyHeight_TextBox_TextChanged.Clear();
-            }
-        }
-
-        private void MyWeight_TextBox_TextChanged(object sender, EventArgs e)
-        {
-            double temp = 0.0f;
-            try
-            {
-                if ("".Equals(WeightTextBox.Text))
-                {
-                    temp = 99.0f;
-                }
-                else
-                {
-                    temp = double.Parse(WeightTextBox.Text);
-                }
-            }
-            catch (Exception exception)
-            {
-                temp = -1.0f;
-            }
-
-            try
-            {
-                if (temp < 0)
-                {
-                    throw new Exception("Input string was not in correct format!");
-                }
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(MessageBox.Show(exception.Message));
-                WeightTextBox.Clear();
-            }
-        }
-
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void lblHeight_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnReset_Click(object sender, EventArgs e)
+        private void txtHeigh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblWeight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtWeight_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCalculate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
         {
 
         }
