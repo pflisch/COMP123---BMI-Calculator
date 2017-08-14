@@ -224,5 +224,17 @@ namespace Assignment5
                 WeightTextBox.Clear();
             }
         }
+
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
