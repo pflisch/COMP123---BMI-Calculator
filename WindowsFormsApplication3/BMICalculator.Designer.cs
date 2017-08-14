@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.CalculateBMI = new System.Windows.Forms.Button();
+            this.CalculateBMIButton = new System.Windows.Forms.Button();
             this.MyWeight_TextBox = new System.Windows.Forms.TextBox();
             this.MyHeight_TextBox = new System.Windows.Forms.TextBox();
             this.ImperialButton = new System.Windows.Forms.RadioButton();
@@ -47,7 +47,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.6701F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.3299F));
-            this.tableLayoutPanel1.Controls.Add(this.CalculateBMI, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.CalculateBMIButton, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.MyWeight_TextBox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.MyHeight_TextBox, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.ImperialButton, 0, 0);
@@ -70,18 +70,18 @@
             // 
             // CalculateBMI
             // 
-            this.CalculateBMI.AccessibleDescription = "";
-            this.CalculateBMI.AccessibleName = "";
-            this.CalculateBMI.BackColor = System.Drawing.Color.Black;
-            this.CalculateBMI.Font = new System.Drawing.Font("Miramonte", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalculateBMI.Location = new System.Drawing.Point(8, 193);
-            this.CalculateBMI.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.CalculateBMI.Name = "CalculateBMI";
-            this.CalculateBMI.Size = new System.Drawing.Size(139, 89);
-            this.CalculateBMI.TabIndex = 6;
-            this.CalculateBMI.Text = "Calculate BMI";
-            this.CalculateBMI.UseVisualStyleBackColor = false;
-            this.CalculateBMI.Click += new System.EventHandler(this.button1_Click);
+            this.CalculateBMIButton.AccessibleDescription = "";
+            this.CalculateBMIButton.AccessibleName = "";
+            this.CalculateBMIButton.BackColor = System.Drawing.Color.Black;
+            this.CalculateBMIButton.Font = new System.Drawing.Font("Miramonte", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalculateBMIButton.Location = new System.Drawing.Point(8, 193);
+            this.CalculateBMIButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.CalculateBMIButton.Name = "CalculateBMI";
+            this.CalculateBMIButton.Size = new System.Drawing.Size(139, 89);
+            this.CalculateBMIButton.TabIndex = 6;
+            this.CalculateBMIButton.Text = "Calculate BMI";
+            this.CalculateBMIButton.UseVisualStyleBackColor = false;
+            this.CalculateBMIButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // MyWeight_TextBox
             // 
@@ -90,6 +90,7 @@
             this.MyWeight_TextBox.Name = "MyWeight_TextBox";
             this.MyWeight_TextBox.Size = new System.Drawing.Size(113, 38);
             this.MyWeight_TextBox.TabIndex = 4;
+            this.MyWeight_TextBox.TextChanged += new System.EventHandler(this.MyWeight_TextBox_TextChanged);
             // 
             // MyHeight_TextBox
             // 
@@ -98,6 +99,7 @@
             this.MyHeight_TextBox.Name = "MyHeight_TextBox";
             this.MyHeight_TextBox.Size = new System.Drawing.Size(113, 38);
             this.MyHeight_TextBox.TabIndex = 3;
+            this.MyHeight_TextBox.TextChanged += new System.EventHandler(this.MyHeight_TextBox_TextChanged);
             // 
             // ImperialButton
             // 
@@ -213,7 +215,7 @@
         private System.Windows.Forms.Label MyWeightLabel;
         private System.Windows.Forms.TextBox MyHeight_TextBox;
         private System.Windows.Forms.TextBox MyWeight_TextBox;
-        private System.Windows.Forms.Button CalculateBMI;
+        private System.Windows.Forms.Button CalculateBMIButton;
         private System.Windows.Forms.TextBox CalculateBMI_TextBox;
         private System.Windows.Forms.TextBox BMICalculator_Text;
     }
