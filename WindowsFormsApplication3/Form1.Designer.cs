@@ -30,13 +30,13 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.textbox3 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -81,44 +81,19 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Calculate BMI";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Miramonte", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 130);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "My Weight";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(170, 137);
+            this.textBox2.Location = new System.Drawing.Point(169, 137);
             this.textBox2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(113, 38);
             this.textBox2.TabIndex = 4;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Miramonte", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(8, 65);
-            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 33);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "My Height";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(170, 72);
+            this.textBox1.Location = new System.Drawing.Point(169, 72);
             this.textBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(113, 38);
@@ -146,7 +121,7 @@
             this.radioButton2.Font = new System.Drawing.Font("Miramonte", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.White;
             this.radioButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.radioButton2.Location = new System.Drawing.Point(170, 7);
+            this.radioButton2.Location = new System.Drawing.Point(169, 7);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(109, 37);
@@ -155,13 +130,39 @@
             this.radioButton2.Text = "Metric";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Miramonte", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(8, 65);
+            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(136, 33);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "My Height";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(170, 193);
+            this.textBox5.Location = new System.Drawing.Point(169, 193);
             this.textBox5.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(113, 38);
             this.textBox5.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Miramonte", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(8, 130);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 33);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "My Weight";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textbox3
             // 
