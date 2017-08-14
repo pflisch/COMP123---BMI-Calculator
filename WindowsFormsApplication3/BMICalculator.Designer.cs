@@ -40,6 +40,7 @@
             this.lblWeight = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.lblBMI = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,20 +58,20 @@
             this.tableLayoutPanel1.Controls.Add(this.lblHeight, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtCalculate, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnClose, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lblWeight, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnReset, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblWeight, 0, 2);
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 82);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 60);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(21, 17, 21, 17);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 171F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(291, 426);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(289, 326);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // btnCalculate
@@ -79,10 +80,10 @@
             this.btnCalculate.AccessibleName = "";
             this.btnCalculate.BackColor = System.Drawing.Color.Black;
             this.btnCalculate.Font = new System.Drawing.Font("Miramonte", 20F);
-            this.btnCalculate.Location = new System.Drawing.Point(8, 173);
+            this.btnCalculate.Location = new System.Drawing.Point(8, 179);
             this.btnCalculate.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(145, 75);
+            this.btnCalculate.Size = new System.Drawing.Size(143, 75);
             this.btnCalculate.TabIndex = 6;
             this.btnCalculate.Text = "Calculate BMI";
             this.btnCalculate.UseVisualStyleBackColor = false;
@@ -91,7 +92,7 @@
             // txtWeight
             // 
             this.txtWeight.Font = new System.Drawing.Font("Miramonte", 20F);
-            this.txtWeight.Location = new System.Drawing.Point(169, 123);
+            this.txtWeight.Location = new System.Drawing.Point(167, 128);
             this.txtWeight.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(113, 40);
@@ -101,7 +102,7 @@
             // txtHeigh
             // 
             this.txtHeigh.Font = new System.Drawing.Font("Miramonte", 20F);
-            this.txtHeigh.Location = new System.Drawing.Point(169, 66);
+            this.txtHeigh.Location = new System.Drawing.Point(167, 74);
             this.txtHeigh.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtHeigh.Name = "txtHeigh";
             this.txtHeigh.Size = new System.Drawing.Size(113, 40);
@@ -131,7 +132,7 @@
             this.btnMetric.Font = new System.Drawing.Font("Miramonte", 20F);
             this.btnMetric.ForeColor = System.Drawing.Color.White;
             this.btnMetric.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMetric.Location = new System.Drawing.Point(169, 7);
+            this.btnMetric.Location = new System.Drawing.Point(167, 7);
             this.btnMetric.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnMetric.Name = "btnMetric";
             this.btnMetric.Size = new System.Drawing.Size(109, 37);
@@ -146,7 +147,7 @@
             this.lblHeight.AutoSize = true;
             this.lblHeight.Font = new System.Drawing.Font("Miramonte", 20F);
             this.lblHeight.ForeColor = System.Drawing.Color.White;
-            this.lblHeight.Location = new System.Drawing.Point(8, 59);
+            this.lblHeight.Location = new System.Drawing.Point(8, 67);
             this.lblHeight.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblHeight.Name = "lblHeight";
             this.lblHeight.Size = new System.Drawing.Size(136, 33);
@@ -158,7 +159,7 @@
             // txtCalculate
             // 
             this.txtCalculate.Font = new System.Drawing.Font("Miramonte", 20F);
-            this.txtCalculate.Location = new System.Drawing.Point(169, 173);
+            this.txtCalculate.Location = new System.Drawing.Point(167, 179);
             this.txtCalculate.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtCalculate.Name = "txtCalculate";
             this.txtCalculate.Size = new System.Drawing.Size(113, 40);
@@ -169,9 +170,9 @@
             // 
             this.btnClose.BackColor = System.Drawing.Color.IndianRed;
             this.btnClose.Font = new System.Drawing.Font("Miramonte", 20F);
-            this.btnClose.Location = new System.Drawing.Point(164, 258);
+            this.btnClose.Location = new System.Drawing.Point(162, 279);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(124, 50);
+            this.btnClose.Size = new System.Drawing.Size(124, 44);
             this.btnClose.TabIndex = 11;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -182,7 +183,7 @@
             this.lblWeight.AutoSize = true;
             this.lblWeight.Font = new System.Drawing.Font("Miramonte", 20F);
             this.lblWeight.ForeColor = System.Drawing.Color.White;
-            this.lblWeight.Location = new System.Drawing.Point(8, 116);
+            this.lblWeight.Location = new System.Drawing.Point(8, 121);
             this.lblWeight.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblWeight.Name = "lblWeight";
             this.lblWeight.Size = new System.Drawing.Size(142, 33);
@@ -195,9 +196,9 @@
             // 
             this.btnReset.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnReset.Font = new System.Drawing.Font("Miramonte", 20F);
-            this.btnReset.Location = new System.Drawing.Point(3, 258);
+            this.btnReset.Location = new System.Drawing.Point(3, 279);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(155, 50);
+            this.btnReset.Size = new System.Drawing.Size(153, 44);
             this.btnReset.TabIndex = 10;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -207,7 +208,7 @@
             // 
             this.lblBMI.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.lblBMI.Font = new System.Drawing.Font("Miramonte", 20F);
-            this.lblBMI.Location = new System.Drawing.Point(12, 12);
+            this.lblBMI.Location = new System.Drawing.Point(9, 12);
             this.lblBMI.Name = "lblBMI";
             this.lblBMI.Size = new System.Drawing.Size(289, 40);
             this.lblBMI.TabIndex = 2;
@@ -215,12 +216,24 @@
             this.lblBMI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lblBMI.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(125, 403);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 31);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // BMICalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(304, 442);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblBMI);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
@@ -252,6 +265,7 @@
         private System.Windows.Forms.TextBox lblBMI;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -83,14 +83,14 @@ namespace Assignment5
 
         private void btnImperial_CheckedChanged(object sender, EventArgs e)
         {
-            HeightLabel.Text = "My Height(Inches) :";
-            WeightLabel.Text = "My Weight(Pounds) :";
+            lblHeight.Text = "My Height(Inches): ";
+            lblWeight.Text = "My Weight(Pounds): ";
         }
 
         private void btnMetric_CheckedChanged(object sender, EventArgs e)
         {
-            HeightLabel.Text = "My Height(Meters) :";
-            WeightLabel.Text = "My Weight(Kg) :";
+            lblHeight.Text = "My Height(Meters): ";
+            lblWeight.Text = "My Weight(Kg): ";
         }
 
         private void lblHeight_Click(object sender, EventArgs e)
@@ -100,7 +100,35 @@ namespace Assignment5
 
         private void txtHeigh_TextChanged(object sender, EventArgs e)
         {
+            double temp = 0.0f;
+            try
+            {
+                if ("".Equals(txtHeigh.Text))
+                {
+                    temp = 99.0f;
+                }
+                else
+                {
+                    temp = double.Parse(txtHeigh.Text);
+                }
+            }
+            catch (Exception exception)
+            {
+                temp = -1.0f;
+            }
 
+            try
+            {
+                if (temp < 0)
+                {
+                    throw new Exception("Information wasn't inserted in the right format");
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(MessageBox.Show(exception.Message));
+                txtHeigh.Clear();
+            }
         }
 
         private void lblWeight_Click(object sender, EventArgs e)
@@ -110,12 +138,65 @@ namespace Assignment5
 
         private void txtWeight_TextChanged(object sender, EventArgs e)
         {
+            double temp = 0.0f;
+            try
+            {
+                if ("".Equals(txtWeight.Text))
+                {
+                    temp = 99.0f;
+                }
+                else
+                {
+                    temp = double.Parse(txtWeight.Text);
+                }
+            }
+            catch (Exception exception)
+            {
+                temp = -1.0f;
+            }
 
+            try
+            {
+                if (temp < 0)
+                {
+                    throw new Exception("Information wasn't inserted in the right format");
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(MessageBox.Show(exception.Message));
+                txtWeight.Clear();
+            }
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if ((string.IsNullOrEmpty(txtHeigh.Text)) || (string.IsNullOrEmpty(txtWeight.Text)) || (ImperialRadioButton.Checked == false && MetricRadioButton.Checked == false))
+                {
+                    throw new Exception("Enter the correct values, please.");
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+                return;
+            }
+            Height = double.Parse(txtHeigh.Text);
+            Weight = double.Parse(txtWeight.Text);
+            if (btnImperial.Checked)
+            {
+                BMIValue = (Weight * 703) / (Height * Height);
+                txtCalculate.Text = string.Format("{0:f2}", BMIValue);
+                SetBMIScale(BMIValue);
+            }
+            else if (btnMetric.Checked)
+            {
+                BMIValue = Weight / (Height * Height);
+                txtCalculate.Text = string.Format("{0:f2}", BMIValue);
+                SetBMIScale(BMIValue);
+            }
         }
 
         private void txtCalculate_TextChanged(object sender, EventArgs e)
@@ -124,6 +205,16 @@ namespace Assignment5
         }
 
         private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
