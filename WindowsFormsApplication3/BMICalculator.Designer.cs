@@ -40,7 +40,7 @@
             this.lblWeight = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.lblBMI = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -216,16 +216,16 @@
             this.lblBMI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lblBMI.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // label1
+            // lblResult
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(125, 403);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 31);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.lblResult.AutoSize = true;
+            this.lblResult.BackColor = System.Drawing.Color.Silver;
+            this.lblResult.Location = new System.Drawing.Point(125, 403);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(86, 31);
+            this.lblResult.TabIndex = 3;
+            this.lblResult.Text = "label1";
+            this.lblResult.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // BMICalculator
             // 
@@ -233,7 +233,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(304, 442);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblBMI);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
@@ -265,7 +265,7 @@
         private System.Windows.Forms.TextBox lblBMI;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
